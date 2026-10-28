@@ -473,6 +473,69 @@ h1, h2, h3, h4 {
   color: var(--color-text-muted, #525c56);
 }
 
+.fallback-text-spaced {
+  margin-top: var(--space-md, 1rem);
+}
+
+/* Reusable utility classes for typography & spacing */
+.text-center {
+  text-align: center;
+}
+
+.gallery-title {
+  text-align: center;
+  color: var(--color-primary, #2d6a4f);
+}
+
+.gallery-subtitle {
+  text-align: center;
+  color: var(--color-text-muted, #525c56);
+  max-width: 650px;
+  margin: var(--space-xs, 0.5rem) auto var(--space-lg, 1.5rem) auto;
+}
+
+.article-heading-spaced {
+  margin-top: var(--space-xs, 0.5rem);
+}
+
+.text-subtle {
+  font-size: 0.9rem;
+  color: var(--color-text-muted, #525c56);
+}
+
+.text-subtle-sm {
+  margin-top: var(--space-sm, 0.75rem);
+  font-size: 0.85rem;
+}
+
+.mt-2xs {
+  margin-top: var(--space-2xs, 0.25rem);
+}
+
+.mt-xs {
+  margin-top: var(--space-xs, 0.5rem);
+}
+
+.mt-sm {
+  margin-top: var(--space-sm, 0.75rem);
+}
+
+.mt-md {
+  margin-top: var(--space-md, 1rem);
+}
+
+.mt-lg {
+  margin-top: var(--space-lg, 1.5rem);
+}
+
+.mb-xs {
+  margin-bottom: var(--space-xs, 0.5rem);
+}
+
+.btn-form-submit {
+  min-width: 220px;
+}
+
 /* ==========================================================================
    Tickets & Booking Layout: Table, Form & Map
    ========================================================================== */
