@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <title>City Zoo Sanctuary | Admission Tickets, Pricing &amp; Directions</title>
+  <meta name="description" content="View admission rates for adults, children, seniors, and family passes. Reserve your tickets online and find directions via our interactive map.">
+  
+  <!-- Baseline Design Tokens & Core Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Site Header Landmark with Flexbox Navigation -->
+  <header class="site-header">
+    <div class="container navbar-container">
+      <a href="index.html" class="brand-link" aria-label="City Zoo Sanctuary Home">
+        <span class="brand-logo-icon" aria-hidden="true">🌿</span>
+        <span>City Zoo Sanctuary</span>
+      </a>
+
+      <!-- Primary Site Navigation (Internal Links) -->
+      <nav class="site-nav" aria-label="Main Website Navigation">
+        <ul class="nav-menu">
+          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="animals.html" class="nav-link">Animals &amp; Habitats</a></li>
+          <li class="nav-item"><a href="tickets.html" class="nav-link active" aria-current="page">Tickets &amp; Visit</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Landmark -->
+  <main class="site-main">
+    <div class="container">
+      
+      <!-- Hero Intro Section -->
+      <section class="page-hero" aria-labelledby="tickets-hero-heading">
+        <h1 id="tickets-hero-heading">Plan Your Sanctuary Visit</h1>
+        <p>
+          Review our structured ticket options, book group passes online, and get transit directions to our gates.
+          100% of admission proceeds directly support wildlife care and endangered habitat research.
+        </p>
+      </section>
+
+      <!-- Layout Grid: Pricing Table & Booking Form -->
+      <div class="tickets-layout-grid">
+        
+        <!-- Section: Structured Pricing Table -->
+        <section class="content-card" aria-labelledby="pricing-heading">
+          <h2 id="pricing-heading">Standard Admission Pricing</h2>
+          <p>Tickets grant full all-day access to all bio-zones, keeper demonstrations, and botanical walking trails.</p>
+
+          <div class="table-responsive-wrapper">
+            <table class="pricing-table">
+              <caption>City Zoo Sanctuary General Admission Rates (Effective 2026)</caption>
+              <thead>
+                <tr>
+                  <th scope="col">Ticket Category</th>
+                  <th scope="col">Age / Eligibility Criteria</th>
+                  <th scope="col">Weekday Rate</th>
+                  <th scope="col">Weekend Rate</th>
+                  <th scope="col">Perks Included</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Adult Admission</th>
+                  <td>Ages 18 – 64</td>
+                  <td class="price-tag">$24.00</td>
+                  <td class="price-tag">$28.00</td>
+                  <td>Full park admission &amp; daily keeper talks</td>
+                </tr>
+                <tr>
+                  <th scope="row">Child Pass</th>
+                  <td>Ages 3 – 17</td>
+                  <td class="price-tag">$14.00</td>
+                  <td class="price-tag">$16.00</td>
+                  <td>Includes Wildlife Passport sticker booklet</td>
+                </tr>
+                <tr>
+                  <th scope="row">Infant</th>
+                  <td>Under 3 years</td>
+                  <td class="price-tag">Free</td>
+                  <td class="price-tag">Free</td>
+                  <td>Stroller parking &amp; nursery access</td>
+                </tr>
+                <tr>
+                  <th scope="row">Senior Citizen</th>
+                  <td>Ages 65+ (with valid ID)</td>
+                  <td class="price-tag">$18.00</td>
+                  <td class="price-tag">$20.00</td>
+                  <td>Priority shuttle tram boarding pass</td>
+                </tr>
+                <tr>
+                  <th scope="row">Family Bundle</th>
+                  <td>2 Adults + up to 3 Children</td>
+                  <td class="price-tag">$65.00</td>
+                  <td class="price-tag">$75.00</td>
+                  <td>20% discount on sanctuary cafeteria meals</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <td colspan="5">
+                    * Rates include local taxes. Group bookings of 15+ visitors receive an additional 15% discount when reserved at least 48 hours in advance.
+                  </td>
+                </tr>
+              </tfoot>
+            </table>
+          </div>
+
+          <div style="margin-top: 1.5rem;">
+            <h3>Planning Tips for First-Time Visitors:</h3>
+            <ol class="instruction-steps">
+              <li>Review the <a href="animals.html">Animals &amp; Habitats</a> page to prioritize exhibits you wish to see.</li>
+              <li>Arrive 15 minutes before opening to catch the 10:30 AM penguin morning feeding.</li>
+              <li>Wear comfortable closed-toe walking shoes suitable for outdoor paved and gravel nature paths.</li>
+            </ol>
+          </div>
+        </section>
+
+        <!-- Section: Ticket Booking / Reservation Form -->
+        <section class="booking-form-card" aria-labelledby="form-heading">
+          <h2 id="form-heading">Online Ticket Inquiry &amp; Reservation</h2>
+          <p>
+            Submit your reservation details below. You will receive an immediate confirmation email with your digital barcode pass.
+          </p>
+
+          <form action="#" method="post" class="booking-form" novalidate>
+            
+            <!-- Contact Row: Name & Email -->
+            <div class="form-row-2col">
+              <div class="form-group">
+                <label for="visitor-name" class="form-label">
+                  Full Name <span class="required-asterisk" aria-hidden="true">*</span>
+                </label>
+                <input 
+                  type="text" 
+                  id="visitor-name" 
+                  name="visitor_name" 
+                  class="form-input" 
+                  placeholder="e.g. Jane Doe" 
+                  required
+                  autocomplete="name"
+                >
+                <span class="form-helper">Please enter your primary legal first and last name.</span>
+              </div>
+
+              <div class="form-group">
+                <label for="visitor-email" class="form-label">
+                  Email Address <span class="required-asterisk" aria-hidden="true">*</span>
+                </label>
+                <input 
+                  type="email" 
+                  id="visitor-email" 
+                  name="visitor_email" 
+                  class="form-input" 
+                  placeholder="name@example.com" 
+                  required
+                  autocomplete="email"
+                >
+                <span class="form-helper">Tickets will be delivered to this email address.</span>
+              </div>
+            </div>
+
+            <!-- Row 2: Phone & Date -->
+            <div class="form-row-2col">
+              <div class="form-group">
+                <label for="visitor-phone" class="form-label">
+                  Phone Number <span class="required-asterisk" aria-hidden="true">*</span>
+                </label>
+                <input 
+                  type="tel" 
+                  id="visitor-phone" 
+                  name="visitor_phone" 
+                  class="form-input" 
+                  placeholder="(555) 000-0000" 
+                  pattern="[0-9+() -]{7,20}" 
+                  required
+                  autocomplete="tel"
+                >
+                <span class="form-helper">Required for emergency park notifications and reminders.</span>
+              </div>
+
+              <div class="form-group">
+                <label for="visit-date" class="form-label">
+                  Intended Visit Date <span class="required-asterisk" aria-hidden="true">*</span>
+                </label>
+                <input 
+                  type="date" 
+                  id="visit-date" 
+                  name="visit_date" 
+                  class="form-input" 
+                  required
+                >
+                <span class="form-helper">Select any date within the next 90 days.</span>
+              </div>
+            </div>
+
+            <!-- Row 3: Ticket Quantity & Area Dropdown -->
+            <div class="form-row-2col">
+              <div class="form-group">
+                <label for="ticket-quantity" class="form-label">
+                  Ticket Quantity <span class="required-asterisk" aria-hidden="true">*</span>
+                </label>
+                <input 
+                  type="number" 
+                  id="ticket-quantity" 
+                  name="ticket_quantity" 
+                  class="form-input" 
+                  min="1" 
+                  max="50" 
+                  value="1" 
+                  required
+                >
+                <span class="form-helper">Number of individual admissions (1 to 50).</span>
+              </div>
+
+              <div class="form-group">
+                <label for="primary-biozone" class="form-label">
+                  Primary Habitat / Area of Interest <span class="required-asterisk" aria-hidden="true">*</span>
+                </label>
+                <select id="primary-biozone" name="primary_biozone" class="form-select" required>
+                  <option value="" disabled selected>Select an area of interest...</option>
+                  <option value="all">All Habitats (General Admission Pass)</option>
+                  <option value="savannah">African Savannah &amp; Safari Trail</option>
+                  <option value="rainforest">Tropical Rainforest Canopy Walk</option>
+                  <option value="marine">Coastal Marine &amp; Penguin Cove</option>
+                  <option value="himalayas">Himalayan Montane &amp; Red Panda Habitat</option>
+                </select>
+                <span class="form-helper">Helps our team customize your arrival visitor pack.</span>
+              </div>
+            </div>
+
+            <!-- Special Requests Textarea -->
+            <div class="form-group">
+              <label for="special-requests" class="form-label">Special Requests or Accessibility Needs</label>
+              <textarea 
+                id="special-requests" 
+                name="special_requests" 
+                class="form-textarea" 
+                placeholder="Let us know if you require wheelchair assistance, sensory accommodations, or dietary questions for group cafeteria bookings..."
+              ></textarea>
+            </div>
+
+            <!-- Submit Button -->
+            <div style="margin-top: 0.5rem;">
+              <button type="submit" class="btn btn-primary" style="min-width: 220px;">
+                Confirm Reservation &rarr;
+              </button>
+            </div>
+
+          </form>
+        </section>
+
+        <!-- Section: Interactive Map with iframe -->
+        <section class="map-card" aria-labelledby="map-section-title">
+          <h2 id="map-section-title">Park Location &amp; Directions</h2>
+          <p>
+            City Zoo Sanctuary is centrally situated off Interstate 80 with dedicated shuttle connections from Metro Green Line station.
+            Use the interactive Google Maps embed below or view direct driving routes.
+          </p>
+
+          <div class="map-iframe-container">
+            <!-- Embedded Google Map using standard <iframe> with lazy loading and permissions -->
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509374!2d144.9537353153166!3d-37.81627977975171!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzfCsDQ4JzU4LjYiUyAxNDTCsDU3JzEzLjQiRQ!5e0!3m2!1sen!2sus!4v1614000000000" 
+              title="City Zoo Sanctuary Location Map &amp; Transit Routes"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              allowfullscreen
+            ></iframe>
+          </div>
+
+          <p style="margin-top: 1rem; font-size: 0.9rem;">
+            Prefer to navigate with external GPS?
+            <a 
+              href="https://maps.google.com/?q=Zoo+Sanctuary" 
+              target="_blank" 
+              rel="noopener noreferrer"
+            >
+              Open in Google Maps application &nearr;
+            </a>
+          </p>
+        </section>
+
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer Landmark with External Authoritative Links -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-grid">
+        
+        <div class="footer-col">
+          <h4>City Zoo Sanctuary</h4>
+          <p>
+            Empowering visitors to champion wildlife protection through unforgettable encounters,
+            educational research tours, and ethical animal stewardship.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Navigation</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html">Home Overview</a></li>
+            <li><a href="animals.html">Animals &amp; Habitats</a></li>
+            <li><a href="tickets.html">Tickets &amp; Directions</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Authoritative Wildlife Partners</h4>
+          <ul class="footer-links-list">
+            <li>
+              <a href="https://www.worldwildlife.org" target="_blank" rel="noopener noreferrer">
+                World Wildlife Fund (WWF) &nearr;
+              </a>
+            </li>
+            <li>
+              <a href="https://www.iucnredlist.org" target="_blank" rel="noopener noreferrer">
+                IUCN Red List &nearr;
+              </a>
+            </li>
+            <li>
+              <a href="https://en.wikipedia.org/wiki/Zoo" target="_blank" rel="noopener noreferrer">
+                Modern Zoos &amp; Welfare (Wikipedia) &nearr;
+              </a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 City Zoo Sanctuary. Built with pure semantic HTML5 &amp; CSS3.</p>
+        <address>
+          124 Safari Way, Green Valley &bull;
+          <a href="mailto:info@cityzoosanctuary.org">info@cityzoosanctuary.org</a> &bull;
+          Phone: (555) 019-2834
+        </address>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
