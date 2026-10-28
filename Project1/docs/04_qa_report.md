@@ -75,7 +75,7 @@ All 3 core HTML pages and the unified CSS architecture were validated using auto
 
 ### 3.5 Media Elements Audit
 * **Images (`<img>`):** Featured animal of the month (`index.html`), 6 high-resolution resident species cards (`animals.html`). All specify descriptive `alt` tags and `loading="lazy"`.
-* **Native Video (`<video>`):** Features `controls`, `preload="metadata"`, `poster` image, nested `<source type="video/mp4">`, and fallback text with download link (`animals.html`).
+* **Video / Media Embed (`<video>` / `<iframe>`):** Featured wildlife video (*Meet new African lion Kiume*) embedded in a responsive 16:9 container with fullscreen capabilities (`animals.html`).
 * **Native Audio (`<audio>`):** Features `controls`, `preload="none"`, `aria-label`, `<source type="audio/mpeg">`, and fallback text (`animals.html`).
 * **Interactive Map (`<iframe>`):** Responsive 16:9 Google Maps embed on `tickets.html` with `loading="lazy"`, `title`, and `referrerpolicy="no-referrer-when-downgrade"`.
 * **Document Embed (`<embed>`):** Digital park visitor PDF guide on `animals.html` with `type="application/pdf"`, `title`, and external view fallback.

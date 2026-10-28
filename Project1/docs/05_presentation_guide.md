@@ -81,8 +81,8 @@
   > This provides automatic reflow: on mobile it forms 1 column, on tablets 2 columns, and on desktop 3 columns—all without arbitrary per-card breakpoint overrides.
   >
   > For the media requirement, we deployed three distinct elements:
-  > 1. A native HTML5 `<video>` player with metadata preloading, poster preview, accessible controls, and download fallback.
-  > 2. A native HTML5 `<audio>` soundscape capturing field recordings.
+  > 1. A featured wildlife video embed: *Meet new African lion Kiume*, embedded in a fluid 16:9 aspect-ratio container with fullscreen and HD streaming capabilities.
+  > 2. A native HTML5 `<audio>` soundscape capturing savannah morning recordings.
   > 3. An `<embed>` element displaying our downloadable park visitor guide and map directly in the viewport."
 
 ---
