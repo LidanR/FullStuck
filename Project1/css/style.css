@@ -34,12 +34,15 @@ img, video, iframe, embed {
 a {
   color: var(--color-primary, #2d6a4f);
   text-decoration: underline;
+  text-decoration-color: rgba(45, 106, 79, 0.35);
   text-underline-offset: 3px;
-  transition: color var(--transition-fast, 0.15s ease-in-out);
+  transition: color var(--transition-fast, 0.15s ease-in-out),
+              text-decoration-color var(--transition-fast, 0.15s ease-in-out);
 }
 
 a:hover, a:focus-visible {
   color: var(--color-primary-hover, #1b4332);
+  text-decoration-color: var(--color-primary-hover, #1b4332);
 }
 
 h1, h2, h3, h4 {
@@ -179,7 +182,16 @@ h1, h2, h3, h4 {
   border-radius: var(--radius-pill, 9999px);
   border: 2px solid transparent;
   cursor: pointer;
-  transition: all var(--transition-base, 0.25s ease-in-out);
+  transition: transform var(--transition-fast, 0.15s ease-in-out),
+              box-shadow var(--transition-fast, 0.15s ease-in-out),
+              background-color var(--transition-base, 0.25s ease-in-out),
+              border-color var(--transition-base, 0.25s ease-in-out),
+              color var(--transition-base, 0.25s ease-in-out);
+}
+
+.btn:active {
+  transform: translateY(0);
+  box-shadow: var(--shadow-sm, 0 1px 3px rgba(0, 0, 0, 0.08));
 }
 
 .btn-primary {
@@ -190,7 +202,8 @@ h1, h2, h3, h4 {
 .btn-primary:hover, .btn-primary:focus-visible {
   background-color: var(--color-primary-hover, #1b4332);
   color: var(--color-text-inverse, #ffffff);
-  box-shadow: var(--shadow-md, 0 4px 12px rgba(0, 0, 0, 0.12));
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md, 0 4px 12px rgba(0, 0, 0, 0.15));
 }
 
 .btn-secondary {
@@ -201,6 +214,8 @@ h1, h2, h3, h4 {
 
 .btn-secondary:hover, .btn-secondary:focus-visible {
   background-color: var(--color-primary-light, #d8f3dc);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-sm, 0 2px 6px rgba(45, 106, 79, 0.12));
 }
 
 /* ==========================================================================
@@ -224,6 +239,13 @@ h1, h2, h3, h4 {
   border-radius: var(--radius-md, 8px);
   padding: var(--space-lg, 1.5rem);
   box-shadow: var(--shadow-sm, 0 1px 3px rgba(0, 0, 0, 0.05));
+  transition: transform var(--transition-base, 0.25s ease-in-out),
+              box-shadow var(--transition-base, 0.25s ease-in-out);
+}
+
+.content-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md, 0 4px 12px rgba(0, 0, 0, 0.08));
 }
 
 .content-card h2, .content-card h3 {
