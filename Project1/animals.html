@@ -207,14 +207,14 @@
             <h3>Featured Lion Video: Meet Kiume</h3>
             <p>Watch an introduction to Kiume, the African lion at the sanctuary savannah habitat.</p>
             <div class="video-container">
-              <iframe 
-                src="https://www.youtube.com/embed/IpiHv4l6MRs" 
-                title="Meet new African lion Kiume" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                referrerpolicy="strict-origin-when-cross-origin" 
-                loading="lazy"
-                allowfullscreen
-              ></iframe>
+              <video controls preload="metadata" poster="media/posters/lion-poster.jpg"
+                aria-label="Kiume the African Lion in his habitat">
+                <!-- Public domain wildlife video stream -->
+                <source src="media/Lion.mp4" type="video/mp4">
+                <p class="fallback-text">
+                  Your browser does not support the video element.
+                </p>
+              </video>
             </div>
             <p class="fallback-text">
               Featured wildlife video streaming with full player controls and high-definition playback.
@@ -228,7 +228,7 @@
             <div class="audio-container">
               <audio controls preload="none" aria-label="Savannah wildlife acoustic recording">
                 <!-- Public domain nature audio stream -->
-                <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+                <source src="media/Birds.wav" type="audio/wav">
                 <p class="fallback-text">
                   Your browser does not support the audio element.
                 </p>
@@ -244,14 +244,13 @@
             <h3>Sanctuary Visitor Guide (PDF)</h3>
             <p>View our interactive digital visitor guide and seasonal park map directly below.</p>
             <div class="embed-pdf-container">
-              <!-- Valid PDF embed with fallbacks -->
-              <embed src="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"
-                type="application/pdf" title="Zoo Sanctuary Visitor Guide and Botanical Map (PDF)">
+              <!-- Local PDF embed with fallbacks -->
+              <embed src="media/documents/visitor-guide.pdf" type="application/pdf"
+                title="Zoo Sanctuary Visitor Guide and Botanical Map (PDF)">
             </div>
             <p class="fallback-text">
               Direct document embed using the native HTML <code>&lt;embed&gt;</code> element.
-              <a href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" target="_blank"
-                rel="noopener noreferrer">
+              <a href="media/documents/visitor-guide.pdf" target="_blank" rel="noopener noreferrer">
                 Open PDF in new tab &nearr;
               </a>
             </p>
