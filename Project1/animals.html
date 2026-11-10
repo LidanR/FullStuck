@@ -16,42 +16,32 @@
 
 <body>
 
-  <!-- Site Header Landmark with Flexbox Navigation -->
+  <!-- Site Header -->
   <header class="site-header">
     <div class="container navbar-container">
-      <a href="index.html" class="brand-link" aria-label="City Zoo Sanctuary Home">
-        <span class="brand-logo-icon" aria-hidden="true">🌿</span>
+      <a href="index.html" class="brand-link">
+        <span class="brand-logo-icon">🌿</span>
         <span>City Zoo Sanctuary</span>
       </a>
 
-      <!-- Primary Site Navigation (Internal Links) -->
-      <nav class="site-nav" aria-label="Main Website Navigation">
+      <!-- Primary Site Navigation -->
+      <nav class="site-nav">
         <ul class="nav-menu">
           <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-          <li class="nav-item"><a href="animals.html" class="nav-link active" aria-current="page">Animals &amp;
-              Habitats</a></li>
+          <li class="nav-item"><a href="animals.html" class="nav-link active">Animals &amp; Habitats</a></li>
           <li class="nav-item"><a href="tickets.html" class="nav-link">Tickets &amp; Visit</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <!-- Main Landmark -->
+  <!-- Main Content -->
   <main class="site-main">
     <div class="container">
 
-      <!-- Hero Intro Header -->
-      <section class="page-hero" aria-labelledby="animals-page-title">
-        <h1 id="animals-page-title">Animals &amp; Natural Habitats</h1>
-        <p>
-          Step into authentic natural biomes designed specifically for behavioral enrichment and species well-being.
-          Meet our resident ambassadors and discover their roles in sustaining global biodiversity.
-        </p>
-      </section>
-
       <!-- Section: Animal Cards Grid Gallery -->
-      <section aria-labelledby="gallery-title">
-        <h2 id="gallery-title" class="gallery-title">Featured Wildlife Gallery</h2>
+      <section>
+        <h2 class="gallery-title">Featured Wildlife Gallery</h2>
         <p class="gallery-subtitle">
           Click on any species profile or external link to explore detailed scientific classifications, diet
           requirements, and habitat range.
@@ -65,7 +55,6 @@
             <div class="animal-img-wrapper">
               <img src="https://images.unsplash.com/photo-1546182990-dffeafbe841d?auto=format&fit=crop&w=600&q=80"
                 alt="Close-up of a majestic male African Lion in the savannah grass" loading="lazy">
-              <span class="species-status-tag status-vulnerable">Vulnerable</span>
             </div>
             <div class="animal-card-body">
               <h3>African Lion</h3>
@@ -86,7 +75,6 @@
             <div class="animal-img-wrapper">
               <img src="https://images.unsplash.com/photo-1557050543-4d5f4e07ef46?auto=format&fit=crop&w=600&q=80"
                 alt="African Bush Elephant walking through grassland near trees" loading="lazy">
-              <span class="species-status-tag status-endangered">Endangered</span>
             </div>
             <div class="animal-card-body">
               <h3>African Bush Elephant</h3>
@@ -107,7 +95,6 @@
             <div class="animal-img-wrapper">
               <img src="https://images.unsplash.com/photo-1598439210625-5067c578f3f6?auto=format&fit=crop&w=600&q=80"
                 alt="Humboldt Penguin standing on a rocky coastal ledge" loading="lazy">
-              <span class="species-status-tag status-vulnerable">Vulnerable</span>
             </div>
             <div class="animal-card-body">
               <h3>Humboldt Penguin</h3>
@@ -129,7 +116,6 @@
               <img
                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsfBjp_primE_StF1rveiaaJUV9X8s2pDx1ySwRLDvLA&s=10"
                 alt="Cute Red Panda resting on a high tree branch" loading="lazy">
-              <span class="species-status-tag status-endangered">Endangered</span>
             </div>
             <div class="animal-card-body">
               <h3>Red Panda</h3>
@@ -151,7 +137,6 @@
               <img
                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTslmOXozpPmkqXB3RpTWoa6F7SumCES8ZoN06NPj4fHFtPDId2q18g1RjD1WcEB0gqdtHkmMSLVuBnJk5GrkTJ38eOeF2WvsfysBid0cXEKg&s=10"
                 alt="Bright vibrant yellow Poison Dart Frog in tropical leaf foliage" loading="lazy">
-              <span class="species-status-tag status-least-concern">Stable</span>
             </div>
             <div class="animal-card-body">
               <h3>Golden Poison Frog</h3>
@@ -173,7 +158,6 @@
               <img
                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLgXsKxTg9O4ISJPwJF3SVQyArzKAaog6WTlYo1Cy0dA&s=10"
                 alt="Tall Giraffe eating leaves from the top of an acacia tree" loading="lazy">
-              <span class="species-status-tag status-vulnerable">Vulnerable</span>
             </div>
             <div class="animal-card-body">
               <h3>Reticulated Giraffe</h3>
@@ -193,8 +177,8 @@
       </section>
 
       <!-- Media Section: Video, Audio and PDF Embed -->
-      <section class="media-section" aria-labelledby="multimedia-title">
-        <h2 id="multimedia-title">Interactive Media &amp; Habitat Soundscapes</h2>
+      <section class="media-section">
+        <h2>Interactive Media &amp; Habitat Soundscapes</h2>
         <p class="media-subtitle">
           Experience our educational multimedia resources showcasing resident wildlife behavior, acoustic soundscapes,
           and digital park documents.
@@ -207,8 +191,7 @@
             <h3>Featured Lion Video: Meet Kiume</h3>
             <p>Watch an introduction to Kiume, the African lion at the sanctuary savannah habitat.</p>
             <div class="video-container">
-              <video controls preload="metadata" poster="media/posters/lion-poster.jpg"
-                aria-label="Kiume the African Lion in his habitat">
+              <video controls preload="metadata" poster="media/posters/lion-poster.jpg">
                 <!-- Public domain wildlife video stream -->
                 <source src="media/Lion.mp4" type="video/mp4">
                 <p class="fallback-text">
@@ -226,7 +209,7 @@
             <h3>Savannah Audio Soundscape</h3>
             <p>Listen to an ambient audio recording of morning birds and wildlife calls across the grassland.</p>
             <div class="audio-container">
-              <audio controls preload="none" aria-label="Savannah wildlife acoustic recording">
+              <audio controls preload="none">
                 <!-- Public domain nature audio stream -->
                 <source src="media/Birds.wav" type="audio/wav">
                 <p class="fallback-text">
@@ -262,58 +245,17 @@
     </div>
   </main>
 
-  <!-- Footer Landmark with External Authoritative Links -->
+  <!-- Footer -->
   <footer class="site-footer">
     <div class="container footer-container">
-      <div class="footer-grid">
-
-        <div class="footer-col">
-          <h4>City Zoo Sanctuary</h4>
-          <p>
-            A non-profit wildlife conservation haven dedicated to scientific observation, ethical animal care,
-            and fostering environmental stewardship across all generations.
-          </p>
-        </div>
-
-        <div class="footer-col">
-          <h4>Explore Our Site</h4>
-          <ul class="footer-links-list">
-            <li><a href="index.html">Home Overview</a></li>
-            <li><a href="animals.html">Animals &amp; Habitats</a></li>
-            <li><a href="tickets.html">Tickets &amp; Directions</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-col">
-          <h4>Global Wildlife Alliances</h4>
-          <ul class="footer-links-list">
-            <li>
-              <a href="https://www.worldwildlife.org" target="_blank" rel="noopener noreferrer">
-                World Wildlife Fund (WWF) &nearr;
-              </a>
-            </li>
-            <li>
-              <a href="https://www.iucnredlist.org" target="_blank" rel="noopener noreferrer">
-                IUCN Red List of Threatened Species &nearr;
-              </a>
-            </li>
-            <li>
-              <a href="https://en.wikipedia.org/wiki/Wildlife_conservation" target="_blank" rel="noopener noreferrer">
-                Conservation Strategies (Wikipedia) &nearr;
-              </a>
-            </li>
-          </ul>
-        </div>
-
-      </div>
-
-      <div class="footer-bottom">
-        <p>&copy; 2026 City Zoo Sanctuary. Built with pure semantic HTML5 &amp; CSS3.</p>
-        <address>
-          124 Safari Way, Green Valley &bull;
-          <a href="mailto:info@cityzoosanctuary.org">info@cityzoosanctuary.org</a> &bull;
-          Phone: (555) 019-2834
-        </address>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="animals.html">Animals</a>
+        <a href="tickets.html">Tickets</a>
+        <a href="https://www.worldwildlife.org" target="_blank" rel="noopener noreferrer">WWF</a>
+        <a href="https://www.iucnredlist.org" target="_blank" rel="noopener noreferrer">IUCN Red List</a>
+        <a href="https://en.wikipedia.org/wiki/Wildlife_conservation" target="_blank"
+          rel="noopener noreferrer">Conservation (Wiki)</a>
       </div>
     </div>
   </footer>

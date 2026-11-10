@@ -1,102 +1,56 @@
-# Project Specification: Zoo Static Website
+# Project 1: Zoo Website - Specifications
 
-## 1. Project Overview & Target Audience
-
-### 1.1 Project Overview
-This project is an academic, static multi-page website (pure HTML5 and CSS3) for a modern zoological park and wildlife conservation center. The site aims to provide essential visitor information, showcase animal species and habitats, promote educational engagement, and facilitate ticket booking inquiries.
-
-### 1.2 Target Audience & Primary User Scenarios
-* **Scenario A: Families with Children**
-  * **Goal:** Plan a safe, entertaining, and educational family day trip.
-  * **Journey:** Visits the homepage (`index.html`) to check today's opening hours and key highlights -> Navigates to `animals.html` to find family-favorite exhibits and kid-friendly feeding schedules -> Moves to `tickets.html` to review bundle pricing (family discounts) and submits a ticket booking inquiry via the form.
-* **Scenario B: Solo Visitors & Wildlife Enthusiasts**
-  * **Goal:** Explore specific habitats, watch educational multimedia, and check directions.
-  * **Journey:** Arrives on `animals.html` to study conservation programs, watch the featured animal behavior video, and review animal facts -> Navigates to `tickets.html` to inspect general admission rates and view the zoo's transit/map location.
+## Overview
+A static multi-page website for a city zoo (HTML5 & CSS3).
+The site has 3 pages:
+1. `index.html` - Homepage with general information, daily hours, keeper talks and highlights.
+2. `animals.html` - Animal cards gallery with species info, habitat video and sounds.
+3. `tickets.html` - Admission prices table, reservation form and Google map.
 
 ---
 
-## 2. 3-Page Website Structure
+## Page Breakdown
 
-| Page | Filename | Key Sections & Features |
-| :--- | :--- | :--- |
-| **Home** | `index.html` | - Hero banner with welcome tagline and primary CTA<br>- Zoo highlights & conservation pillars<br>- Operating schedule & real-time daily opening hours<br>- Quick sidebar announcement (`<aside>`) for seasonal events |
-| **Animals & Habitats** | `animals.html` | - Overview of global zoo bio-zones (Savannah, Rainforest, Arctic)<br>- Animal cards gallery with taxonomy, status, and facts<br>- Featured educational video with native HTML5 media controls<br>- Quick-fact lists for species |
-| **Tickets & Planning** | `tickets.html` | - Structured admission pricing table (Adult, Child, Senior, Family pass)<br>- Interactive visit reservation/inquiry form with validation fields<br>- Zoo directions, transit guide, and embedded map/location overview |
+### 1. Home (`index.html`)
+- Header with site logo and navigation links.
+- About section introducing the zoo and its conservation work.
+- Featured "Animal of the Month" card (Lion).
+- Opening hours section with a schedule list.
+- Sidebar (`<aside>`) with quick facts and keeper talks times.
+- Footer with site links and contact info.
 
----
+### 2. Animals & Habitats (`animals.html`)
+- Header and navigation.
+- Species gallery using CSS Grid (Lion, Bush Elephant, Penguin, Red Panda, Dart Frog, Giraffe).
+  - Each card has an image, status badge, scientific name, short description and a link to Wikipedia.
+- Media section:
+  - Video player (featured lion clip).
+  - Audio player (savannah sounds).
+  - Visitor guide PDF embed.
+- Footer.
 
-## 3. Wireframes & Semantic Layout (`index.html`)
-
-The layout strictly uses semantic HTML5 elements to structure content cleanly for accessibility and search engine optimization.
-
-```text
-+--------------------------------------------------------------------------+
-|  <header>                                                                |
-|    +-----------------------------+  <nav>                                |
-|    | [Logo] City Zoo Sanctuary   |    [Home]  [Animals]  [Tickets & Visit]|
-|    +-----------------------------+  </nav>                               |
-+--------------------------------------------------------------------------+
-|  <main>                                                                  |
-|    +------------------------------------------------------------------+  |
-|    | <section id="hero">                                              |  |
-|    |   <h1>Discover Wildlife, Support Conservation</h1>               |  |
-|    |   <p>Explore over 300 species in natural habitats.</p>           |  |
-|    |   <a href="tickets.html" class="btn">Book Your Visit</a>         |  |
-|    | </section>                                                       |  |
-|    +-------------------------------------------------+----------------+  |
-|    | <section id="highlights">                       | <aside>        |  |
-|    |   <h2>Zoo Highlights</h2>                       |  <h3>Daily     |  |
-|    |   +-----------------------+ +-----------------+ |  Schedule</h3> |  |
-|    |   | <article>             | | <article>       | |  <ul>          |  |
-|    |   |   <h3>Savannah Walk</h3>|   <h3>Rainforest</h3>| |   <li>Hours</li>|
-|    |   |   <p>Guided safari...</p>   <p>Canopy tour</p>| |   <li>Show</li> |
-|    |   | </article>            | | </article>      | |  </ul>         |  |
-|    |   +-----------------------+ +-----------------+ | </aside>       |  |
-|    | </section>                                      |                |  |
-|    +-------------------------------------------------+----------------+  |
-|    | <section id="hours-info">                                        |  |
-|    |   <h2>General Admission & Hours</h2>                             |  |
-|    |   <p>Open daily 09:00 - 18:00 (Last entry at 17:00)</p>          |  |
-|    | </section>                                                       |  |
-|  </main>                                                                 |
-+--------------------------------------------------------------------------+
-|  <footer>                                                                |
-|    <p>&copy; 2026 City Zoo Sanctuary. All rights reserved.             |
-|    <address>124 Safari Way, Green Valley | contact@cityzoo.org</address> |
-+--------------------------------------------------------------------------+
-```
+### 3. Tickets & Visit (`tickets.html`)
+- Header and navigation.
+- Pricing table with columns for category, age, weekday/weekend price and perks.
+- Visit tips ordered list.
+- Booking/inquiry form:
+  - Name, email, phone.
+  - Visit date picker.
+  - Number of tickets.
+  - Habitat selection dropdown.
+  - Special requests textarea.
+  - Submit button.
+- Location map embed (Google Maps iframe).
+- Footer.
 
 ---
 
-## 4. Requirements Mapping Checklist
-
-This checklist tracks where every required HTML element category is implemented across the 3 pages:
-
-- [x] **Hyperlinks (`<a>`):**
-  - Global site navigation links in `<nav>` (`index.html`, `animals.html`, `tickets.html`).
-  - Hero call-to-action button linking from `index.html` to `tickets.html`.
-  - External links to conservation partners in `<footer>` (`all pages`).
-  - Anchor jump links to specific habitat sections (`animals.html`).
-
-- [x] **Lists (`<ul>`, `<ol>`, `<dl>`):**
-  - Unordered list (`<ul>`) for header navigation menu (`all pages`).
-  - Unordered list (`<ul>`) for daily events/feeding times (`index.html`).
-  - Definition list (`<dl>`) or bullet list (`<ul>`) for animal taxonomy, diet, and lifespan facts (`animals.html`).
-  - Ordered list (`<ol>`) for "How to Plan Your Visit" steps (`tickets.html`).
-
-- [x] **Tables (`<table>`):**
-  - Structured pricing table with `<thead>`, `<tbody>`, `<th>`, `<tr>`, and `<td>` for ticket tiers (Adult, Child, Senior, Group rates) on `tickets.html`.
-
-- [x] **Forms (`<form>`):**
-  - Contact and ticket reservation booking form on `tickets.html` containing:
-    - `<input type="text">` (Full Name)
-    - `<input type="email">` (Email address)
-    - `<input type="date">` (Visit Date)
-    - `<select>` with `<option>` (Ticket Category/Count)
-    - `<textarea>` (Special accessibility requests / inquiries)
-    - `<button type="submit">` (Submit Booking Inquiry)
-
-- [x] **Media Elements (`<img>`, `<video>`, `<iframe>`):**
-  - `<img>`: Zoo logo in header, hero image on `index.html`, animal photography grid cards on `animals.html`.
-  - `<video>`: Featured native HTML5 video with `controls`, `<source>`, and fallback text on `animals.html`.
-  - `<iframe>` or responsive vector map image: Interactive/styled map location for zoo directions on `tickets.html`.
+## Technical Checklist
+- Semantic HTML tags: `header`, `nav`, `main`, `section`, `article`, `aside`, `footer`.
+- At least 3 internal links per page (nav links + CTAs).
+- At least 3 external links per page (WWF, IUCN, Wikipedia).
+- Unordered (`<ul>`) and ordered (`<ol>`) lists.
+- Styled table with `thead`, `tbody`, `tfoot`, `th`, `td`.
+- Form with multiple input types (`text`, `email`, `tel`, `date`, `number`, `select`, `textarea`).
+- Media tags: `img`, `iframe`, `audio`, `embed`.
+- Responsive design: CSS Flexbox for nav/form, CSS Grid for animal cards and desktop layout.
